@@ -75,6 +75,8 @@ knitr::include_graphics("./_figs/0/ins1.png")
 
 Para más detalles sobre la configuración de RStudio ver tutorial de [Shannon Pileggi](https://www.pipinghotdata.com/posts/2020-09-07-introducing-the-rstudio-ide-and-r-markdown/)
 
+> **Importante:** `RStudio` es una interfaz a `R`, es decir, necesita que `R`se encuentre instalado en el equipo para poder usarse. En este curso toda nuestra interacción con `R` sera a través de `RStudio`. No es necesario abrir ambos programas, _**solo abrir `RStudio` y continuar con la instalación**_.
+
 ## 3. Instalar Paquetes {-}
 
 Ademas, R y RStudio deberá instalar paquetes con funcionalidades adicionales.
@@ -98,26 +100,24 @@ write.csv(list_pckg, "../upch_r101/list_pckg.csv", row.names = F)
 
 ```
 
-```{r echo=F, message=F, warning=F}
+```{r echo=F, message=F, warning=F, }
 options(knitr.kable.NA = '')
 
 library(tidyverse)
 
-x <- read.csv("../list_pckg.csv", stringsAsFactors = F, 
-              col.names = "Packages") %>% unlist()
+x <- read.csv("../list_pckg.csv", stringsAsFactors = F) %>% unlist()
 z <- sort(x)
 
-a <- z[1:(length(z)/2)]
-b <- setdiff(z, a)
+zz <- split(z, 
+            cut(seq_along(z), 4,labels = FALSE)) 
 
-c <- qpcR:::cbind.na(a, b)
-rownames(c) <- NULL
+z2 <- do.call(qpcR:::cbind.na, zz)
 
-d <- as.data.frame(c) %>%
-  rename(" " = a,
-         "  " = b)
+row.names(z2) <- NULL
 
-kableExtra::kable(d)
+kableExtra::kable(z2, col.names = NULL,
+                  caption = "Tabla 1: Paquetes de R requeridos")
+
 ```
 
 ### Instalacion automatica
@@ -132,7 +132,13 @@ source("https://raw.githubusercontent.com/healthinnovation/upch_r101/main/r101_i
 knitr::include_graphics("./_figs/0/pckg.png")
 ```
 
-Verificar que los paquetes se han instalado correctamente en la parte inferior derecha de RStudio, pestaña "Packages".
+Es posible que se nos muestre el siguiente mensaje al momento de la instalación. Escribir "Yes" en la consola para autorizar la instalación de algunas dependencias.
+
+```{r , echo=FALSE, fig.align="center", out.width = '70%'}
+knitr::include_graphics("./_figs/0/ins_w.png")
+```
+
+Verificar que los paquetes en la `Tabla 1: Paquetes de R requeridos` se han instalado correctamente en la parte inferior derecha de RStudio, pestaña "Packages".
 
 ```{r , echo=FALSE, fig.align="center", out.width = '70%'}
 knitr::include_graphics("./_figs/0/ins9.png")
@@ -158,6 +164,8 @@ knitr::include_graphics("./_figs/0/install.png")
 
 **3. Colocar el nombre de los paquetes que se deben instalar**
 
+Instalar todoslos paquetes listados en la `Tabla 1: Paquetes de R requeridos`.
+
 ```{r , echo=FALSE, fig.align="center", out.width = '70%'}
 if (knitr::is_html_output()) {
     knitr::include_graphics("./_figs/0/rstudio_install_packages.gif")
@@ -176,7 +184,7 @@ knitr::include_graphics("./_figs/0/ins7.png")
 
 **5. Verificación**
 
-Si deseas comprobar que los paquetes se han instalado correctamente, puedes encontrar los paquetes instalados en la parte inferior derecha de RStudio, pestaña "Packages".
+Si deseas comprobar que los paquetes se han instalado correctamente, puedes encontrar los paquetes instalados en la parte inferior derecha de RStudio, pestaña "Packages". Verificar que los paquetes en la `Tabla 1: Paquetes de R requeridos` se han instalado correctamente.
 
 ```{r , echo=FALSE, fig.align="center", out.width = '70%'}
 knitr::include_graphics("./_figs/0/ins9.png")
