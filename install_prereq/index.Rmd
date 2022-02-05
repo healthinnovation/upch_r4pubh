@@ -120,7 +120,7 @@ kableExtra::kable(z2, col.names = NULL,
 
 ```
 
-### Instalacion automatica
+### Instalacion automatica {-}
 
 Para instalar todos los paquetes necesarios para el curso, copiar el siguiente código en la consola y dar `ENTER`.
 
@@ -144,7 +144,7 @@ Verificar que los paquetes en la `Tabla 1: Paquetes de R requeridos` se han inst
 knitr::include_graphics("./_figs/0/ins9.png")
 ```
 
-### Instalacion manual
+### Instalacion manual {-}
 
 De lo contrario se puede realizar la instalación de los `paquetes` de forma manual siguiento estos pasos:
 
