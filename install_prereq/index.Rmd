@@ -9,79 +9,83 @@ output:
 
 # Pre-requisitos {-}
 
-A continuacion encontrara un paso a paso para:
+A continuación se presentarán los pasos necesarios para instalar correctamente R y RStudio en Windows y macOS:
 
-1. Descargar e Instalar R
-2. Descargar e instalar RStudio
-3. Descargar e instalar los paquetes que se utilizaran durante el curso
+1. Descargar e Instalar R.
+2. Descargar e instalar RStudio.
+3. Descargar e instalar los paquetes que se utilizarán durante el curso.
 
-Requiere de una laptop donde instalar los programas y de una conexion a internet estable durante el proceso de descarga e instalacion.
+Requiere de una laptop donde instalar los programas y de una conexión a internet estable durante el proceso de descarga e instalación.
 
 Para el curso deberá tener instalados los siguientes programas:
 
   * [R](https://cran.r-project.org/)
   * [RStudio](https://rstudio.com/products/rstudio/)
   
-Los siguientes detalles son tomados de [Riva Quiroga](https://twitter.com/rivaquiroga)
+Los siguientes detalles son tomados de [Riva Quiroga](https://twitter.com/rivaquiroga).
 
 ## 1. Instalar R {-}
 Puedes descargar R desde https://cran.r-project.org/. Debes elegir la opción que corresponda, según tu sistema operativo.
 
-<center>
-![](https://github.com/rivaquiroga/taller-R-BCN/raw/master/imagenes/cran.png)
-</center>
+```{r echo=FALSE, out.width = '100%', fig.align="center"}
+knitr::include_graphics("figures/00-prereq/01-download-install-r.png")
+```
 
 Si utilizas Windows, te preguntará qué es lo que quieres instalar. Selecciona "base".
 
-<center>
-![](https://github.com/rivaquiroga/taller-R-BCN/raw/master/imagenes/windows.png)
-</center>
+```{r echo=FALSE, out.width = '100%', fig.align="center"}
+knitr::include_graphics("figures/00-prereq/02-r-for-windows.png")
+```
 
-En el caso de Mac, elige la primera opción que aparece bajo "Latest release", es decir, "R-4.1.2.pkg (notarized and signed)".
+En el caso de macOS, elige la primera opción que aparece bajo "Latest release", es decir, "R-4.1.2.pkg (notarized and signed)".
+
+```{r echo=FALSE, out.width = '100%', fig.align="center"}
+knitr::include_graphics("figures/00-prereq/03-r-for-mac.png")
+```
 
 Luego, sigue los pasos de instalación, tal como lo haces con cualquier programa.
 
-Si todo sale bien, al abrir R en tu computador deberías ver algo parecido a esto en Windows:
+Si todo sale bien, al abrir R en tu computador deberías ver algo parecido a esto en Windows y macOS:
 
-<center>
-![](https://github.com/rivaquiroga/taller-R-BCN/raw/master/imagenes/r-windows.png)
-</center>
+```{r echo=FALSE, out.width = '100%', fig.align="center"}
+knitr::include_graphics("figures/00-prereq/04-rstudio-consola.jpeg")
+```
 
-Y en Mac se debería ver así:
-
-<center>
-![](https://github.com/rivaquiroga/taller-R-BCN/raw/master/imagenes/r-mac.png)
-</center>
-
-(La información sobre la versión de R y sobre el sistema operativo que aparece en ese mensaje inicial puede que se vea distinto en tu caso.)
+La información sobre la versión de R y sobre el sistema operativo que aparece en ese mensaje inicial dependerá de la versión descargaste.
 
 ## 2. Instalar RStudio{-}
 
-Una vez que R ha quedado correctamente instalado, descarga RStudio desde https://www.rstudio.com/products/rstudio/download/. Elige la primera opción, es decir, "RStudio Desktop Open Source License" (gratuita).
+Una vez que R ha sido correctamente instalado, descarga RStudio desde el siguiente enlace https://www.rstudio.com/products/rstudio/download/. Elige la primera opción: "RStudio Desktop Open Source License" (gratuita).
+
 Instala RStudio en tu computador, tal como lo haces con cualquier programa.
-Si quedó todo bien instalado, cuando abras RStudio deberías ver algo parecido a esto (algunas cosas pueden variar según tu sistema operativo):
+Para comprobar que RStudio está bien instalado, deberías ver algo parecido a esto (algunas cosas pueden variar según tu sistema operativo):
 
-<center>
-![](https://github.com/rivaquiroga/taller-R-BCN/raw/master/imagenes/rstudio.png)
-</center>
+```{r echo=FALSE, out.width = '100%', fig.align="center"}
+knitr::include_graphics("figures/00-prereq/11-rstudio-vista.jpg")
+```
 
-A lo largo del curso usaremos una versión reciente de R y RStudio, así que si tienes instalada una versión previa, puede que algunas cosas se vean un poco distintas. Versiones de R anteriores a la 3.5 harán que algunas cosas no funcionen, por lo que te sugerimos actualizar.
+A lo largo del curso trabajaremos con la versión de R y RStudio más actualizada, así que si tienes instalada una versión previa, puede que algunas cosas se vean un poco distintas. Versiones de R anteriores a la 3.5 harán que algunas cosas no funcionen, por lo que te sugerimos actualizar.
 
-> **IMPORTANTE:** Si te encuentras con algún error durante este proceso, lo más probabable es que sea por alguna configuración de tu sistema operativo. En ese caso, la mejor manera de buscar una solución es copiar el error que arroja R, pegarlo en tu motor de búsqueda favorito y ver cómo alguien que se enfrentó a eso antes lo resolvió. Si por alguna razón no logras resolver los problemas de instalación antes de la primera clase, no te preocupes. Durante esa sesión utilizaremos la versión en la nube de RStudio. A continuación explicaremos cómo registrarse.
+> **IMPORTANTE:** Si te encuentras con algún error durante este proceso, lo más probabable es que sea por alguna configuración de tu sistema operativo. En ese caso, la mejor manera de buscar una solución es copiar el error que arroja R, pegarlo en tu motor de búsqueda favorito (como Google) y ver cómo alguien que se enfrentó a eso antes lo resolvió. Si por alguna razón no logras resolver los problemas de instalación antes de la primera clase, no te preocupes. Durante esa sesión utilizaremos la versión en la nube de RStudio. A continuación explicaremos cómo registrarse.
 
-```{r , echo=FALSE, fig.align="center", out.width = '40%'}
-knitr::include_graphics("./_figs/0/ins1.png")
+```{r , echo=FALSE, fig.align="center", out.width = '50%'}
+knitr::include_graphics("figures/00-prereq/06-iconos-windows.jpeg")
+```
+
+
+```{r , echo=FALSE, fig.align="center", out.width = '50%'}
+knitr::include_graphics("figures/00-prereq/07-iconos-mac.png")
 ```
 
 Para más detalles sobre la configuración de RStudio ver tutorial de [Shannon Pileggi](https://www.pipinghotdata.com/posts/2020-09-07-introducing-the-rstudio-ide-and-r-markdown/)
 
-> **Importante:** `RStudio` es una interfaz a `R`, es decir, necesita que `R`se encuentre instalado en el equipo para poder usarse. En este curso toda nuestra interacción con `R` sera a través de `RStudio`. No es necesario abrir ambos programas, _**solo abrir `RStudio` y continuar con la instalación**_.
+> **Importante:** `RStudio` es una interfaz a `R`, es decir, necesita que `R`se encuentre instalado en el equipo para poder usarse. En este curso toda nuestra interacción con `R` será a través de `RStudio`. No es necesario abrir ambos programas, _**solo abrir `RStudio` y continuar con la instalación**_.
 
 ## 3. Instalar Paquetes {-}
 
-Ademas, R y RStudio deberá instalar paquetes con funcionalidades adicionales.
+Además de instalar R y RStudio deberá instalar paquetes con funcionalidades adicionales.
 
-Los `paquetes` necesarios para este curso son:
+Los paquetes necesarios para este curso son:
 
 ```{r eval=F, echo=F}
 libs = lapply(list.files(pattern = "0.+Rmd"),
@@ -94,9 +98,9 @@ libs = lapply(list.files(pattern = "0.+Rmd"),
 x <- unique(unlist(libs))
 list_pckg <- x[ !x %in% c("DT","patchwork")]
 
-write.csv(list_pckg, "./_git/list_pckg.csv", row.names = F)
+write.csv(list_pckg, "misc/list_pckg.csv", row.names = F)
 
-write.csv(list_pckg, "../upch_r101/list_pckg.csv", row.names = F)
+# write.csv(list_pckg, "../upch_r101/list_pckg.csv", row.names = F)
 
 ```
 
@@ -120,7 +124,7 @@ kableExtra::kable(z2, col.names = NULL,
 
 ```
 
-### Instalacion automatica {-}
+### Instalación automática {-}
 
 Para instalar todos los paquetes necesarios para el curso, copiar el siguiente código en la consola y dar `ENTER`.
 
@@ -128,58 +132,54 @@ Para instalar todos los paquetes necesarios para el curso, copiar el siguiente c
 source("https://raw.githubusercontent.com/healthinnovation/upch_r101/main/r101_init.R")
 ```
 
-```{r , echo=FALSE, out.width = '90%', fig.align="center"}
-knitr::include_graphics("./_figs/0/pckg.png")
+```{r , echo=FALSE, out.width = '100%', fig.align="center"}
+knitr::include_graphics("figures/00-prereq/08-console.png")
 ```
 
-Es posible que se nos muestre el siguiente mensaje al momento de la instalación. Escribir "Yes" en la consola para autorizar la instalación de algunas dependencias.
+Es posible que aparezca el siguiente mensaje al momento de la instalación. Escribir "Yes" en la consola para autorizar la instalación de algunas dependencias.
+
+```{r , echo=FALSE, fig.align="center", out.width = '100%'}
+knitr::include_graphics("figures/00-prereq/09-binary-version.png")
+```
+
+Verifique que los paquetes en la `Tabla 1: Paquetes de R requeridos` se han instalado correctamente en la parte inferior derecha de RStudio, pestaña "Packages".
 
 ```{r , echo=FALSE, fig.align="center", out.width = '70%'}
-knitr::include_graphics("./_figs/0/ins_w.png")
+knitr::include_graphics("figures/00-prereq/10-packages.png")
 ```
 
-Verificar que los paquetes en la `Tabla 1: Paquetes de R requeridos` se han instalado correctamente en la parte inferior derecha de RStudio, pestaña "Packages".
+### Instalación manual {-}
 
-```{r , echo=FALSE, fig.align="center", out.width = '70%'}
-knitr::include_graphics("./_figs/0/ins9.png")
-```
-
-### Instalacion manual {-}
-
-De lo contrario se puede realizar la instalación de los `paquetes` de forma manual siguiento estos pasos:
+De lo contrario se puede realizar la instalación de los paquetes de forma manual siguiento estos pasos:
 
 **1. Ingrese al programa RStudio**
 
 Una vez dentro, dirigirse al panel de `packages`
 
 ```{r , echo=FALSE, out.width = '100%', fig.align="center"}
-knitr::include_graphics("./_figs/0/rstudio3.png")
+knitr::include_graphics("figures/00-prereq/11-rstudio-vista.jpg")
 ```
 
 **2. Hacer click en `Install`**
 
 ```{r , echo=FALSE, out.width = '70%', fig.align="center"}
-knitr::include_graphics("./_figs/0/install.png")
+knitr::include_graphics("figures/00-prereq/12-install.png")
 ```
 
 **3. Colocar el nombre de los paquetes que se deben instalar**
 
-Instalar todoslos paquetes listados en la `Tabla 1: Paquetes de R requeridos`.
+Instalar todos los paquetes listados en la `Tabla 1: Paquetes de R requeridos`.
 
-```{r , echo=FALSE, fig.align="center", out.width = '70%'}
-if (knitr::is_html_output()) {
-    knitr::include_graphics("./_figs/0/rstudio_install_packages.gif")
-} else {
-    knitr::include_graphics("./_figs/0/rstudio_install_packages.png")
-}
+```{r , echo=FALSE, out.width = '100%', fig.align="center"}
+knitr::include_graphics("figures/00-prereq/14-instalar-packages.jpeg")
 ```
 
 **4. Descarga e instalación**
 
-La instalacion demora menos de 5 minutos. Es normal que aparezcan algunas ventanas de descarga mientras se instalan los paquetes. **Es indispensable tener conexion a internet**
+La instalación demora menos de 5 minutos  y requiere conexión a internet. Es normal que aparezcan algunas ventanas de descarga mientras se instalan los paquetes.
 
-```{r , echo=FALSE, fig.align="center", out.width = '70%'}
-knitr::include_graphics("./_figs/0/ins7.png")
+```{r , echo=FALSE, fig.align="center", out.width = '100%'}
+knitr::include_graphics("figures/00-prereq/15-packages-installed.jpeg")
 ```
 
 **5. Verificación**
@@ -187,6 +187,46 @@ knitr::include_graphics("./_figs/0/ins7.png")
 Si deseas comprobar que los paquetes se han instalado correctamente, puedes encontrar los paquetes instalados en la parte inferior derecha de RStudio, pestaña "Packages". Verificar que los paquetes en la `Tabla 1: Paquetes de R requeridos` se han instalado correctamente.
 
 ```{r , echo=FALSE, fig.align="center", out.width = '70%'}
-knitr::include_graphics("./_figs/0/ins9.png")
+knitr::include_graphics("figures/00-prereq/16-corroboracion-packages.png")
 ```
+
+## 4. Opcional{-}
+
+Si desea personalizar el entorno de RStudio, siga los siguientes pasos:
+
+Para Windows:
+
+Abra RStudio y vaya a la parte superior y cliquée en `Tools` y en el panel desglosable cliquée en `Global Options...`
+
+```{r , echo=FALSE, fig.align="center", out.width = '100%'}
+knitr::include_graphics("figures/00-prereq/19-tools-windows.jpeg")
+```
+
+Para macOS:
+
+Abre RStudio y al costado de la manzanita, cliquea en RStudio y en las opciones desglosables cliquea en `Preferencias...`.
+
+```{r , echo=FALSE, fig.align="center", out.width = '50%'}
+knitr::include_graphics("figures/00-prereq/17-preference-mac.png")
+```
+
+En ambos sistemas operativos, vaya a la sección de `Apariencia` y modifique el tema, enfoque, tamaño y tipo de letra, y finalmente el tema de su preferencia. Se recomienda un tema con fondo oscuro para evitar el cansancio de su vista. Finalmente, cliquée en `OK` para aplicar las modificaciones.
+
+```{r , echo=FALSE, fig.align="center", out.width = '70%'}
+knitr::include_graphics("figures/00-prereq/18-appearance-mac.png")
+```
+
+Si deseas que tus paréntesis tengan diferente colores, en la sección de `Código`, luego vaya a `Display` y selecciones `Rainbowl parentheses`.
+
+```{r , echo=FALSE, fig.align="center", out.width = '70%'}
+knitr::include_graphics("figures/00-prereq/20-display.png")
+```
+
+<!-- Si desea cambiar la posición de su `Recursos`, `consola`, `ambiente, historia, conecciones...` y/o `files, plots...` vaya a `Disposición de panel` y selecciones el orden de su preferencia. -->
+
+```{r , echo=FALSE, fig.align="center", out.width = '70%', eval=FALSE}
+knitr::include_graphics("figures/00-prereq/21-pane-layout.png")
+```
+
+<!-- La apariencia del entorno de RStudio ya se encuentra modificada y lista para usar. -->
 
