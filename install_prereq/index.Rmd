@@ -88,7 +88,7 @@ Además de instalar R y RStudio deberá instalar paquetes con funcionalidades ad
 Los paquetes necesarios para este curso son:
 
 ```{r eval=F, echo=F}
-libs = lapply(list.files(pattern = "0.+Rmd"),
+libs = lapply(list.files(pattern = "-.+Rmd"),
               function(x){
                   d = readLines(x)
                   d = d[grepl("library\\(.*\\)", d)]
@@ -96,7 +96,7 @@ libs = lapply(list.files(pattern = "0.+Rmd"),
               })
 
 x <- unique(unlist(libs))
-list_pckg <- x[ !x %in% c("DT","patchwork")]
+list_pckg <- x[ !x %in% c("DT","patchwork", "pacman", "kableExtra")]
 
 write.csv(list_pckg, "misc/list_pckg.csv", row.names = F)
 
@@ -115,7 +115,7 @@ z <- sort(x)
 zz <- split(z, 
             cut(seq_along(z), 4,labels = FALSE)) 
 
-z2 <- do.call(qpcR:::cbind.na, zz)
+z2 <- data.frame(lapply(zz, `length<-`, max(lengths(zz))))
 
 row.names(z2) <- NULL
 
