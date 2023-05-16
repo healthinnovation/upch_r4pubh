@@ -225,14 +225,14 @@
     },
     "fs": {
       "Package": "fs",
-      "Version": "1.5.2",
+      "Version": "1.6.2",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
         "R",
         "methods"
       ],
-      "Hash": "7c89603d81793f0d5486d91ab1fc6f1d"
+      "Hash": "94af08e0aa9675a16fadbb3aaaa90d2a"
     },
     "glue": {
       "Package": "glue",
@@ -577,7 +577,7 @@
     },
     "sass": {
       "Package": "sass",
-      "Version": "0.4.4",
+      "Version": "0.4.6",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
@@ -587,7 +587,7 @@
         "rappdirs",
         "rlang"
       ],
-      "Hash": "c76cbac7ca04ce82d8c38e29729987a3"
+      "Hash": "cc3ec7dd33982ef56570229b62d6388e"
     },
     "scales": {
       "Package": "scales",

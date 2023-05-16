@@ -3,8 +3,8 @@ title: "UPCH - R101"
 author: "Gabriel Carrasco"
 date: "`r format(Sys.time(), '%d/%m/%Y')`"
 output: 
-  html_document:
-    rmdformats::downcute
+  rmdformats::downcute:
+    use_bookdown: true
 ---
 
 # Pre-requisitos {-}
@@ -193,11 +193,11 @@ packages_raw = lapply(
 packages <- unique(unlist(packages_raw))
 packages_list <- packages[ !packages %in% c("DT","patchwork", "pacman", "kableExtra")]
 
-# write.csv(packages_list, "misc/list_pckg.csv", row.names = F)
+# write.csv(packages_list, "misc/list_pckg.csv", row.names = FALSE)
 ```
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
-packages <- read.csv("list_pckg.csv", stringsAsFactors = F) |> unlist()
+packages <- read.csv("list_pckg.csv", stringsAsFactors = FALSE) |> unlist()
 packages_sort <- sort(packages)
 
 table <- split(packages_sort, cut(seq_along(packages_sort), 4, labels = FALSE)) 
@@ -220,21 +220,13 @@ Para instalar todos los paquetes usados en el libro, copiar el siguiente comando
 source("https://raw.githubusercontent.com/healthinnovation/upch_r101/main/r101_init.R")
 ```
 
-Es posible que aparezca el siguiente mensaje al momento de la instalación: 
-
-```{r source, echo=FALSE, fig.align="center", out.width = '60%', fig.cap="Mensaje de instalación"}
-knitr::include_graphics("figures/00-prereq/09-binary-version.png")
-```
-
-Escribir `Yes` en la consola para autorizar la instalación de las últimas versiones de los paquetes.
-
 Por último, verifique que los paquetes en la Tabla \@ref(tab:packages-table) se hayan instalado correctamente en el panel inferior derecho, pestaña **Packages**.
 
 ```{r check, echo=FALSE, fig.align="center", out.width = '60%', fig.cap="Verificación de instalación"}
 knitr::include_graphics("figures/00-prereq/10-packages.png")
 ```
 
-También se pueden instalar los paquetes manualmente siguiendo las instrucciones de la secciones [Usando las herramientas de RStudio] o [Usando la consola].
+También se pueden instalar manualmente los paquetes siguiendo las instrucciones de la secciones [Usando las herramientas de RStudio] o [Usando la consola].
 
 ## Personalización de la apariencia de RStudio (Opcional) {-}
 
