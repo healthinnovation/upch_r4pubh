@@ -1,0 +1,177 @@
+"Package","Chapter","Chapter_Number"
+"tidyverse","Primeros pasos en R",1
+"tidyverse","tidyverse I: dplyr y pipelines",3
+"codebook","tidyverse I: dplyr y pipelines",3
+"skimr","tidyverse I: dplyr y pipelines",3
+"tidyverse","tidyverse II: tidyr y uniones",4
+"janitor","tidyverse II: tidyr y uniones",4
+"tidyverse","Visualización de datos con ggplot2",5
+"scales","Visualización de datos con ggplot2",5
+"colourpicker","Visualización de datos con ggplot2",5
+"ggsci","Visualización de datos con ggplot2",5
+"tidyverse","Análisis exploratorio de datos (AED)",6
+"janitor","Análisis exploratorio de datos (AED)",6
+"pubh","Análisis exploratorio de datos (AED)",6
+"pracma","Análisis exploratorio de datos (AED)",6
+"moments","Análisis exploratorio de datos (AED)",6
+"skimr","Análisis exploratorio de datos (AED)",6
+"doBy","Análisis exploratorio de datos (AED)",6
+"sfsmisc","Análisis exploratorio de datos (AED)",6
+"ggmosaic","Análisis exploratorio de datos (AED)",6
+"gtsummary","Análisis exploratorio de datos (AED)",6
+"tidyverse","Extensiones gráficas",7
+"sf","Extensiones gráficas",7
+"mapview","Extensiones gráficas",7
+"geodata","Extensiones gráficas",7
+"ggspatial","Extensiones gráficas",7
+"leaflet.extras2","Extensiones gráficas",7
+"gghighlight","Extensiones gráficas",7
+"ggsci","Extensiones gráficas",7
+"lubridate","Extensiones gráficas",7
+"plotly","Extensiones gráficas",7
+"scales","Extensiones gráficas",7
+"tidyverse","Reproducibilidad con Quarto y Github",8
+"janitor","Reproducibilidad con Quarto y Github",8
+"dplyr","Exactitud y precisión",9
+"ggplot2","Exactitud y precisión",9
+"tidyverse","Exactitud y precisión",9
+"faraway","Exactitud y precisión",9
+"broom","Exactitud y precisión",9
+"broom.helpers","Exactitud y precisión",9
+"rstatix","Exactitud y precisión",9
+"jtools","Exactitud y precisión",9
+"yardstick","Exactitud y precisión",9
+"pubh","Exactitud y precisión",9
+"tidyverse","Contraste de variables continuas",10
+"rstatix","Contraste de variables continuas",10
+"BSDA","Contraste de variables continuas",10
+"DescTools","Contraste de variables continuas",10
+"coin","Contraste de variables continuas",10
+"ggfortify","Contraste de variables continuas",10
+"GGally","Contraste de variables continuas",10
+"MASS","Contraste de variables continuas",10
+"tidyverse","Contraste de variables categóricas",11
+"janitor","Contraste de variables categóricas",11
+"pubh","Contraste de variables categóricas",11
+"ggmosaic","Contraste de variables categóricas",11
+"rstatix","Contraste de variables categóricas",11
+"Publish","Contraste de variables categóricas",11
+"lsr","Contraste de variables categóricas",11
+"MASS","Contraste de variables categóricas",11
+"tidyverse","Regresión lineal: Conceptos básicos {#sec-regresion-lineal}",12
+"broom","Regresión lineal: Conceptos básicos {#sec-regresion-lineal}",12
+"modelbased","Regresión lineal: Conceptos básicos {#sec-regresion-lineal}",12
+"GGally","Regresión lineal: Conceptos básicos {#sec-regresion-lineal}",12
+"parameters","Regresión lineal: Conceptos básicos {#sec-regresion-lineal}",12
+"see","Regresión lineal: Conceptos básicos {#sec-regresion-lineal}",12
+"interactions","Regresión lineal: Conceptos básicos {#sec-regresion-lineal}",12
+"tidyverse","Regresión lineal: Evaluación y extensiones",13
+"ggfortify","Regresión lineal: Evaluación y extensiones",13
+"performance","Regresión lineal: Evaluación y extensiones",13
+"ggeffects","Regresión lineal: Evaluación y extensiones",13
+"MASS","Regresión lineal: Evaluación y extensiones",13
+"leaps","Regresión lineal: Evaluación y extensiones",13
+"broom","Regresión lineal: Evaluación y extensiones",13
+"ggplot2","Regresión logística: Conceptos básicos {#sec-regresion-log}",14
+"tidyverse","Regresión logística: Conceptos básicos {#sec-regresion-log}",14
+"mlbench","Regresión logística: Conceptos básicos {#sec-regresion-log}",14
+"GGally","Regresión logística: Conceptos básicos {#sec-regresion-log}",14
+"broom","Regresión logística: Conceptos básicos {#sec-regresion-log}",14
+"jtools","Regresión logística: Conceptos básicos {#sec-regresion-log}",14
+"tidyverse","Regresión logística: Evaluación y extensiones",15
+"performance","Regresión logística: Evaluación y extensiones",15
+"ggeffects","Regresión logística: Evaluación y extensiones",15
+"MASS","Regresión logística: Evaluación y extensiones",15
+"bayestestR","Regresión logística: Evaluación y extensiones",15
+"yardstick","Regresión logística: Evaluación y extensiones",15
+"pubh","Regresión logística: Evaluación y extensiones",15
+"caret","Regresión logística: Evaluación y extensiones",15
+"broom","Regresión logística: Evaluación y extensiones",15
+"tidyverse","Medidas de frecuencia",16
+"riskCommunicator","Medidas de frecuencia",16
+"epiDisplay","Medidas de frecuencia",16
+"epiR","Medidas de frecuencia",16
+"sampler","Medidas de frecuencia",16
+"ACSWR","Medidas de frecuencia",16
+"tidyverse","Medidas de asociación",17
+"riskCommunicator","Medidas de asociación",17
+"epiR","Medidas de asociación",17
+"fmsb","Medidas de asociación",17
+"tidyverse","Estudios transversales",18
+"broom","Estudios transversales",18
+"Epi","Estudios transversales",18
+"foreign","Estudios transversales",18
+"sandwich","Estudios transversales",18
+"lmtest","Estudios transversales",18
+"boot","Estudios transversales",18
+"jtools","Estudios transversales",18
+"ggmosaic","Estudios transversales",18
+"pubh","Estudios transversales",18
+"ggpubr","Estudios transversales",18
+"ggsci","Estudios transversales",18
+"tidyverse","Estudios de casos y controles",19
+"pubh","Estudios de casos y controles",19
+"MatchIt","Estudios de casos y controles",19
+"survival","Estudios de casos y controles",19
+"ggmosaic","Estudios de casos y controles",19
+"broom","Estudios de casos y controles",19
+"tidyverse","Estudios de cohorte",20
+"broom","Estudios de cohorte",20
+"ggplot2","Estudios de cohorte",20
+"ggsci","Estudios de cohorte",20
+"sjPlot","Estudios de cohorte",20
+"tidyverse","Estudios de supervivencia",21
+"ggplot2","Estudios de supervivencia",21
+"survival","Estudios de supervivencia",21
+"survminer","Estudios de supervivencia",21
+"broom","Estudios de supervivencia",21
+"discSurv","Estudios de supervivencia",21
+"ggfortify","Estudios de supervivencia",21
+"ggsci","Estudios de supervivencia",21
+"tidyverse","Análisis multinivel",22
+"lme4","Análisis multinivel",22
+"performance","Análisis multinivel",22
+"broom.mixed","Análisis multinivel",22
+"lattice","Análisis multinivel",22
+"lmerTest","Análisis multinivel",22
+"ggeffects","Análisis multinivel",22
+"tidyverse","Análisis de inequidad",23
+"ineq","Análisis de inequidad",23
+"zoo","Análisis de inequidad",23
+"broom","Análisis de inequidad",23
+"oaxaca","Análisis de inequidad",23
+"tidyverse","Análisis de series de tiempo",24
+"lubridate","Análisis de series de tiempo",24
+"zoo","Análisis de series de tiempo",24
+"forecast","Análisis de series de tiempo",24
+"broom","Análisis de series de tiempo",24
+"purrr","Análisis de series de tiempo",24
+"tidyverse","Análisis espacial",25
+"sf","Análisis espacial",25
+"mapview","Análisis espacial",25
+"geodata","Análisis espacial",25
+"ggspatial","Análisis espacial",25
+"leaflet","Análisis espacial",25
+"leaflet.extras2","Análisis espacial",25
+"spdep","Análisis espacial",25
+"sfdep","Análisis espacial",25
+"spatstat","Análisis espacial",25
+"raster","Análisis espacial",25
+"smacpod","Análisis espacial",25
+"tidyverse","Diseños cuasi-experimentales",26
+"lubridate","Diseños cuasi-experimentales",26
+"jtools","Diseños cuasi-experimentales",26
+"broom","Diseños cuasi-experimentales",26
+"rddensity","Diseños cuasi-experimentales",26
+"estimatr","Diseños cuasi-experimentales",26
+"rddtools","Diseños cuasi-experimentales",26
+"stevedata","Diseños cuasi-experimentales",26
+"tidyverse","Introducción a inferencia causal",27
+"broom","Introducción a inferencia causal",27
+"ggdag","Introducción a inferencia causal",27
+"dagitty","Introducción a inferencia causal",27
+"jtools","Introducción a inferencia causal",27
+"lme4","Introducción a inferencia causal",27
+"MatchIt","Introducción a inferencia causal",27
+"cobalt","Introducción a inferencia causal",27
+"plotly","Introducción a inferencia causal",27
