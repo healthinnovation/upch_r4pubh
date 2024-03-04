@@ -5,9 +5,23 @@ r4pubh_install <- function() {
   }
   library(cli)
   
-  # Paso 2: Leer la lista de paquetes desde la URL proporcionada
-  url_packages <- "https://raw.githubusercontent.com/healthinnovation/upch_r101/main/list_pckg.csv"
-  packages_to_install <- read.csv(url_packages, stringsAsFactors = FALSE)$x
+  # Opciones de menú basadas en los capítulos disponibles
+  url_chapters <- "https://raw.githubusercontent.com/healthinnovation/upch_r4pubh/main/list_pckg_chp.csv"
+  chapters_df <- read.csv(url_chapters, stringsAsFactors = FALSE)
+  chapters <- unique(chapters_df$Chapter)
+  chapters_menu <- c(chapters, "Todo")
+  
+  cli::cli_alert_info("Selecciona el capítulo para instalar los paquetes:")
+  selection <- menu(chapters_menu, title = "Opciones de Capítulos:")
+  
+  if (selection == length(chapters_menu)) { # Si la selección es "Todo"
+    url_packages <- "https://raw.githubusercontent.com/healthinnovation/upch_r101/main/list_pckg.csv"
+    packages_to_install <- read.csv(url_packages, stringsAsFactors = FALSE)$x
+  } else { # Si se selecciona un capítulo específico
+    selected_chapter <- chapters[selection]
+    packages_to_install <- chapters_df$Package[chapters_df$Chapter == selected_chapter]
+    packages_to_install <- unique(packages_to_install)
+  }
   
   # Paso 3: Verificar qué paquetes están instalados
   installed_packages <- installed.packages()[, "Package"]
@@ -61,6 +75,7 @@ r4pubh_install <- function() {
     cli::cli_alert_danger("Hubo un problema con los siguientes paquetes: {paste(not_installed, collapse = ', ')}. Por favor, comunícalo.")
   }
 }
+
 
 # Llamar a la función
 r4pubh_install()
