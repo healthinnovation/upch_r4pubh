@@ -42,6 +42,7 @@
 "jtools","Exactitud y precisión",9
 "yardstick","Exactitud y precisión",9
 "pubh","Exactitud y precisión",9
+"mgcv","Exactitud y precisión",9
 "tidyverse","Contraste de variables continuas",10
 "rstatix","Contraste de variables continuas",10
 "BSDA","Contraste de variables continuas",10
@@ -58,13 +59,13 @@
 "Publish","Contraste de variables categóricas",11
 "lsr","Contraste de variables categóricas",11
 "MASS","Contraste de variables categóricas",11
-"tidyverse","Regresión lineal: Conceptos básicos {#sec-regresion-lineal}",12
-"broom","Regresión lineal: Conceptos básicos {#sec-regresion-lineal}",12
-"modelbased","Regresión lineal: Conceptos básicos {#sec-regresion-lineal}",12
-"GGally","Regresión lineal: Conceptos básicos {#sec-regresion-lineal}",12
-"parameters","Regresión lineal: Conceptos básicos {#sec-regresion-lineal}",12
-"see","Regresión lineal: Conceptos básicos {#sec-regresion-lineal}",12
-"interactions","Regresión lineal: Conceptos básicos {#sec-regresion-lineal}",12
+"tidyverse","Regresión lineal: Conceptos básicos",12
+"broom","Regresión lineal: Conceptos básicos",12
+"modelbased","Regresión lineal: Conceptos básicos",12
+"GGally","Regresión lineal: Conceptos básicos",12
+"parameters","Regresión lineal: Conceptos básicos",12
+"see","Regresión lineal: Conceptos básicos",12
+"interactions","Regresión lineal: Conceptos básicos",12
 "tidyverse","Regresión lineal: Evaluación y extensiones",13
 "ggfortify","Regresión lineal: Evaluación y extensiones",13
 "performance","Regresión lineal: Evaluación y extensiones",13
@@ -72,12 +73,12 @@
 "MASS","Regresión lineal: Evaluación y extensiones",13
 "leaps","Regresión lineal: Evaluación y extensiones",13
 "broom","Regresión lineal: Evaluación y extensiones",13
-"ggplot2","Regresión logística: Conceptos básicos {#sec-regresion-log}",14
-"tidyverse","Regresión logística: Conceptos básicos {#sec-regresion-log}",14
-"mlbench","Regresión logística: Conceptos básicos {#sec-regresion-log}",14
-"GGally","Regresión logística: Conceptos básicos {#sec-regresion-log}",14
-"broom","Regresión logística: Conceptos básicos {#sec-regresion-log}",14
-"jtools","Regresión logística: Conceptos básicos {#sec-regresion-log}",14
+"ggplot2","Regresión logística: Conceptos básicos",14
+"tidyverse","Regresión logística: Conceptos básicos",14
+"mlbench","Regresión logística: Conceptos básicos",14
+"GGally","Regresión logística: Conceptos básicos",14
+"broom","Regresión logística: Conceptos básicos",14
+"jtools","Regresión logística: Conceptos básicos",14
 "tidyverse","Regresión logística: Evaluación y extensiones",15
 "performance","Regresión logística: Evaluación y extensiones",15
 "ggeffects","Regresión logística: Evaluación y extensiones",15

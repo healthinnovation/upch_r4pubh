@@ -29,6 +29,7 @@
 "rstatix"
 "jtools"
 "yardstick"
+"mgcv"
 "BSDA"
 "DescTools"
 "coin"
